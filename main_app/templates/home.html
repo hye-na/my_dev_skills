@@ -9,4 +9,14 @@
     <hr />
   {% endfor %}
 
+  <div class="user_main">
+    <a href="/users/{{ user.id }}">
+            <p>Name: {{ skill.name }}</p>
+            <p>Description: {{ skill.description }}</p>
+            <p>Skill Level: {{ skill.skill_level }}</p>
+            {% endif %}
+        </div>
+    </a>
+</div>
+
 {% endblock %}

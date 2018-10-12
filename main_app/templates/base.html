@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
+
     <header>
     <nav>
     <div class="nav_wrapper">
@@ -21,9 +22,11 @@
         <li><a href="/logout">Log Out</a><li>
         <li><a href="/myskills">My Skills</a><li>
         <li><a href="/addskills">Add Skills</a><li>
-        
+        {% comment %} <a href="{% url 'detail' user.id %}"> {% endcomment %}
    
     <ul>
+
+</div>
     
     
     </nav>
