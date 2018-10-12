@@ -16,7 +16,7 @@
     <nav>
     <div class="nav_wrapper">
     <ul>
-        <li><a href="{% url 'profile' user.username %}">Welcome, {{ user.username }}!</a></li>
+        {% comment %} <li><a href="{% url 'user' user.username %}">Welcome, {{ user.username }}!</a></li> {% endcomment %}
         <li><a href="/signup">Sign Up</a><li>
         <li><a href="/login">Login</a><li>
         <li><a href="/logout">Log Out</a><li>

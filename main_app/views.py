@@ -26,12 +26,12 @@ class SkillUpdate(UpdateView):
     model = Skill
     fields = ['description', 'skill_level']
 
-    def form_valid(self, form)
-    self.object = form.save(commit=False)
-    self.object.save()
-    return HttpResponseRedirect('/home/' + str(self.object.pk))
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.save()
+        return HttpResponseRedirect('/home/' + str(self.object.pk))
 
 
-class CatDelete(DeleteView):
+class SkillDelete(DeleteView):
     model = Skill
     success_url = '/home'
