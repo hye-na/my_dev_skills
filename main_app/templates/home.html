@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>My Dev Skills</h1>
+
+ {% for user in users %}
+    <p>Name: {{ user.name }}</p>
+    <p>Skill: {{ user.skill }}</p>
+    <hr />
+  {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Dev Skills</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+    <nav>
+    <div class="nav_wrapper">
+    <ul>
+        <li><a href="{% url 'profile' user.username %}">Welcome, {{ user.username }}!</a></li>
+        <li><a href="/signup">Sign Up</a><li>
+        <li><a href="/login">Login</a><li>
+        <li><a href="/logout">Log Out</a><li>
+        <li><a href="/myskills">My Skills</a><li>
+        <li><a href="/addskills">Add Skills</a><li>
+        
+   
+    <ul>
+    
+    
+    </nav>
+    </header>
+
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
